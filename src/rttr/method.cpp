@@ -25,9 +25,9 @@
 *                                                                                   *
 *************************************************************************************/
 
+#include "rttr/detail/method/method_wrapper_base.h"
 #include "rttr/method.h"
 
-#include "rttr/detail/method/method_wrapper_base.h"
 #include "rttr/argument.h"
 #include "rttr/instance.h"
 

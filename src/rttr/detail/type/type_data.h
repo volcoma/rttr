@@ -37,7 +37,7 @@
 #include "rttr/detail/type/type_register.h"
 #include "rttr/detail/type/type_name.h"
 #include "rttr/detail/misc/utility.h"
-#include "rttr/destructor.h"
+// #include "rttr/destructor.h"
 #include "rttr/method.h"
 #include "rttr/property.h"
 #include "rttr/constructor.h"

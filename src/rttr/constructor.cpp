@@ -25,8 +25,8 @@
 *                                                                                   *
 *************************************************************************************/
 
-#include "rttr/constructor.h"
 #include "rttr/detail/constructor/constructor_wrapper_base.h"
+#include "rttr/constructor.h"
 #include "rttr/argument.h"
 
 #include <utility>

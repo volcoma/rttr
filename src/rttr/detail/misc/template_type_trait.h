@@ -40,8 +40,8 @@ class type;
 namespace detail
 {
 
-template<typename T>
-struct template_type_trait : std::false_type                                                                                                   \
+template<typename T, typename Enable = void>
+struct template_type_trait : std::false_type
 {
     static std::vector<::rttr::type> get_template_arguments();
 };

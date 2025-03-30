@@ -530,13 +530,14 @@ function(get_latest_supported_cxx CXX_STANDARD)
     if (POLICY CMP0067)
         cmake_policy(SET CMP0067 NEW)
     endif()
-    
+
     # we need to set CMAKE_CXX_STANDARD in order to use the flags for 'check_cxx_source_compiles'
     if(${CMAKE_VERSION} VERSION_LESS "3.8.0") 
         set(CMAKE_CXX_STANDARD 14)
     else()
         set(CMAKE_CXX_STANDARD 17)
     endif()    
+    set(CMAKE_CXX_STANDARD 20)
 
     include(CheckCXXSourceCompiles)
 
@@ -605,7 +606,8 @@ function(get_latest_supported_cxx CXX_STANDARD)
             set(MAX_CXX_STD 11)
         endif()
     endif()
-    
+    set(MAX_CXX_STD 20)
+
     set(${CXX_STANDARD} ${MAX_CXX_STD} PARENT_SCOPE)
 endfunction()
 
